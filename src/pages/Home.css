@@ -1,0 +1,243 @@
+/* Home.css */
+
+/* Container styles */
+.container1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Animation for page elements */
+@keyframes animate {
+  0% {
+      transform: translateY(100vh) scale(0);
+  }
+  100% {
+      transform: translateY(-10vh) scale(0.4);
+  }
+}
+
+/* Fade-in effect for text */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* Styles for banner section */
+#banner {
+  min-height: 100vh;
+  background: linear-gradient(to right, hsl(292, 86%, 9%), rgb(196, 195, 195));
+  background-size: cover;
+  padding-top: 0;
+}
+
+#banner .text {
+  color: #000000;
+  animation: fadeIn 2s;
+}
+
+#banner img {
+  width: 70%;
+}
+
+#banner .ok {
+  margin-top: 120px;
+}
+
+#banner .self {
+  font-size: 30px;
+  font-weight: 5;
+  font-style: italic;
+}
+
+#banner .card {
+  background: transparent;
+  border: 0;
+}
+
+/* Button styles and hover effects */
+.btn-info {
+  transition: all 0.4s ease;
+  border-radius: 3;
+  background-color: #000000;
+}
+
+.btn-container {
+  background-color: blue;
+  container: 30px;
+}
+
+.btn-container:hover {
+  background-color: darkblue;
+}
+
+#banner .card .btn-brand {
+  color: #ffffff;
+  background: rgb(53, 147, 202);
+}
+
+#banner .card .btn-brand:hover {
+  color: #002fff91;
+  background-color: rgb(53, 147, 202);
+  font-weight: 800;
+}
+
+#info .btn-brand {
+  color: #ffffff;
+  background: rgb(30, 147, 194);
+}
+
+#info .btn-brand:hover {
+  color: #ffffff;
+  background-color: rgb(205, 52, 205);
+  font-weight: 800;
+}
+
+/* Footer styles */
+.footer_section {
+  background-color: #43b5f7;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer_section .footer-info {
+  text-align: center;
+}
+
+.footer_section .footer-info p {
+  color: #ffffff;
+  margin: 0;
+}
+
+.footer_section .footer-info p a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Info section styles */
+#info {
+  background: #fff;
+  background-size: cover;
+  margin-top: 100px;
+}
+
+#info img {
+  width: 150px;
+  align-self: center;
+  margin-bottom: 20px;
+  filter: drop-shadow(15px 8px 2px rgba(0, 0, 0, 0.374));
+}
+
+/* Game section styles */
+#game {
+  min-height: 100vh;
+  background: rgb(165, 0, 165);
+  padding-top: 0;
+}
+
+#game .card {
+  background: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+#game h3 {
+  color: rgb(255, 255, 255);
+  margin-left: 20%;
+}
+
+#game h4 {
+  color: rgb(255, 255, 255);
+}
+
+#game img {
+  width: 500px;
+  align-self: center;
+  transition: .5s ease-out;
+}
+
+#game img:hover {
+  width: 650px;
+  align-self: center;
+  transition: .5s;
+}
+
+/* Sea wave animations */
+.sea-wave1 use {
+  -webkit-animation: move-forever1 10s linear infinite;
+  animation: move-forever1 10s linear infinite;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+.sea-wave2 use {
+  -webkit-animation: move-forever2 8s linear infinite;
+  animation: move-forever2 8s linear infinite;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+.sea-wave3 use {
+  -webkit-animation: move-forever3 6s linear infinite;
+  animation: move-forever3 6s linear infinite;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+@-webkit-keyframes move-forever1 {
+  0% {
+      transform: translate(85px, 0%);
+  }
+  100% {
+      transform: translate(-90px, 0%);
+  }
+}
+
+@keyframes move-forever1 {
+  0% {
+      transform: translate(85px, 0%);
+  }
+  100% {
+      transform: translate(-90px, 0%);
+  }
+}
+
+@-webkit-keyframes move-forever2 {
+  0% {
+      transform: translate(-90px, 0%);
+  }
+  100% {
+      transform: translate(85px, 0%);
+  }
+}
+
+@keyframes move-forever2 {
+  0% {
+      transform: translate(-90px, 0%);
+  }
+  100% {
+      transform: translate(85px, 0%);
+  }
+}
+
+@-webkit-keyframes move-forever3 {
+  0% {
+      transform: translate(-90px, 0%);
+  }
+  100% {
+      transform: translate(85px, 0%);
+  }
+}
+
+@keyframes move-forever3 {
+  0% {
+      transform: translate(-90px, 0%);
+  }
+  100% {
+      transform: translate(85px, 0%);
+  }
+}
